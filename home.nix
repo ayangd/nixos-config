@@ -87,6 +87,7 @@ in
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
 
+  # Programs with custom configurations
   programs.nushell = (import ./programs/nushell.nix) { inherit username; };
   programs.carapace = (import ./programs/carapace.nix) { inherit username; };
   programs.starship = (import ./programs/starship.nix) { inherit username; };
