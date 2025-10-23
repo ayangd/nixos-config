@@ -23,6 +23,7 @@ in
     pkgs.devenv
     pkgs.shfmt
     pkgs.nixfmt-rfc-style
+    pkgs.xclip
     # # Adds the 'hello' command to your environment. It prints a friendly
     # # "Hello, world!" when run.
     # pkgs.hello
