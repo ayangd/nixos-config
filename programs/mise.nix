@@ -7,5 +7,5 @@
   enableBashIntegration = true;
   enableNushellIntegration = true;
 
-  globalConfig = {};
+  globalConfig = { };
 }
