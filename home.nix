@@ -94,4 +94,5 @@ in
   programs.starship = (import ./programs/starship.nix) { inherit username; };
   programs.direnv = (import ./programs/direnv.nix) { inherit username; };
   programs.lazygit = (import ./programs/lazygit.nix) { inherit username; };
+  programs.pgcli = (import ./programs/pgcli.nix) { inherit username; };
 }
