@@ -25,6 +25,7 @@ in
     pkgs.nixfmt-rfc-style
     pkgs.xclip
     pkgs.dig
+    pkgs.lolcat
     # # Adds the 'hello' command to your environment. It prints a friendly
     # # "Hello, world!" when run.
     # pkgs.hello
