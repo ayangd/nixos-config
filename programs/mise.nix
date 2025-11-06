@@ -7,5 +7,9 @@
   enableBashIntegration = true;
   enableNushellIntegration = true;
 
-  globalConfig = { };
+  globalConfig = {
+    settings = {
+      idiomatic_version_file_enable_tools = [ ];
+    };
+  };
 }
