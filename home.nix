@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, pkgs, ... }@input:
 let
   username = "ayangd";
 in
@@ -26,6 +26,8 @@ in
     pkgs.xclip
     pkgs.dig
     pkgs.lolcat
+    (import ./packages/gitlogue.nix input)
+
     # # Adds the 'hello' command to your environment. It prints a friendly
     # # "Hello, world!" when run.
     # pkgs.hello
