@@ -27,6 +27,7 @@ in
     pkgs.dig
     pkgs.lolcat
     (import ./packages/gitlogue.nix input)
+    pkgs.pinentry-tty
 
     # # Adds the 'hello' command to your environment. It prints a friendly
     # # "Hello, world!" when run.
