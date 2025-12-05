@@ -95,6 +95,7 @@ in
   # Programs with custom configurations
   programs.mise = (import ./programs/mise.nix) { inherit username; };
   programs.nushell = (import ./programs/nushell.nix) { inherit username; };
+  programs.bash = (import ./programs/bash.nix) { inherit username; };
   programs.carapace = (import ./programs/carapace.nix) { inherit username; };
   programs.starship = (import ./programs/starship.nix) { inherit username; };
   programs.direnv = (import ./programs/direnv.nix) { inherit username; };
