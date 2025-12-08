@@ -31,6 +31,7 @@ in
     pkgs.sd
     pkgs.bat
     pkgs.awscli2
+    pkgs.vimpager
 
     # # Adds the 'hello' command to your environment. It prints a friendly
     # # "Hello, world!" when run.
@@ -83,6 +84,8 @@ in
   #
   home.sessionVariables = {
     EDITOR = "vim";
+    PAGER = "vimpager";
+    MANPAGER = "vimpager";
   };
 
   home.shellAliases = {
