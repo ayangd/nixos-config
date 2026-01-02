@@ -84,6 +84,7 @@ in
   #
   home.sessionVariables = {
     EDITOR = "vim";
+    MANPAGER = "vim +MANPAGER -";
   };
 
   home.shellAliases = {
