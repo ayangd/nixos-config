@@ -1,6 +1,8 @@
 { config, pkgs, ... }@input:
 let
   username = "ayangd";
+
+  opam = (import ./programs/opam.nix { inherit username pkgs; });
 in
 {
   # Home Manager needs a bit of information about you and the paths it should
@@ -49,7 +51,8 @@ in
     # (pkgs.writeShellScriptBin "my-hello" ''
     #   echo "Hello, ${config.home.username}!"
     # '')
-  ];
+  ]
+  ++ opam.packages;
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
   # plain files is through 'home.file'.
@@ -107,4 +110,5 @@ in
   programs.lazygit = (import ./programs/lazygit.nix) { inherit username; };
   programs.lazydocker = (import ./programs/lazydocker.nix) { inherit username; };
   programs.pgcli = (import ./programs/pgcli.nix) { inherit username; };
+  programs.opam = opam.configurations;
 }
