@@ -34,6 +34,7 @@ in
     pkgs.bat
     pkgs.awscli2
     pkgs.dotenvx
+    pkgs.rsync
 
     # # Adds the 'hello' command to your environment. It prints a friendly
     # # "Hello, world!" when run.
