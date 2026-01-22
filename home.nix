@@ -24,6 +24,7 @@ in
   home.packages = [
     pkgs.devenv
     pkgs.shfmt
+    pkgs.shellcheck
     pkgs.nixfmt-rfc-style
     pkgs.xclip
     pkgs.dig
