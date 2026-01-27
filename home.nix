@@ -37,6 +37,7 @@ in
     pkgs.dotenvx
     pkgs.rsync
     pkgs.argocd
+    pkgs.gum
 
     # # Adds the 'hello' command to your environment. It prints a friendly
     # # "Hello, world!" when run.
