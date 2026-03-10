@@ -18,6 +18,7 @@
     # Default configurations before breaking changes
     gui = {
       useHunkModeInStagingView = false;
+      autoStageResolvedConflicts = false;
     };
   };
 }
